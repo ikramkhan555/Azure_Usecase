@@ -13,6 +13,9 @@
 		},
 		"AzureDataLakeStorage_LS_properties_typeProperties_url": {
 			"value": "https://brandadls.dfs.core.windows.net/"
+		},
+		"HttpServer_LS_properties_typeProperties_url": {
+			"value": "https://opendata.ecdc.europa.eu"
 		}
 	}
 }
