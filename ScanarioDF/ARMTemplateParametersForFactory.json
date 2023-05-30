@@ -11,6 +11,9 @@
 		"AzureDataLakeStorage_LS_accountKey": {
 			"value": ""
 		},
+		"AzureSqlDatabase_LS_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage_LS_properties_typeProperties_url": {
 			"value": "https://brandadls.dfs.core.windows.net/"
 		},
