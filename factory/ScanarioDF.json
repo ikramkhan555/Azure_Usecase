@@ -1,0 +1,9 @@
+{
+	"name": "ScanarioDF",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f4294786-4fef-4dc5-90e6-eaa0a3228099",
+		"tenantId": "072bab9d-a16f-4a48-8158-c2cf5c5391e1"
+	}
+}
