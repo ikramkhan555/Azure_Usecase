@@ -1,0 +1,39 @@
+{
+	"name": "HTTP_DS_gen",
+	"properties": {
+		"description": "generic dataset ",
+		"linkedServiceName": {
+			"referenceName": "HttpServer_para_LS",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"baseurl": {
+					"value": "@dataset().baseurl",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"baseurl": {
+				"type": "string"
+			},
+			"relativurl": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().relativurl",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
