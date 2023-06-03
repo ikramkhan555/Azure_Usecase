@@ -7,16 +7,16 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"baseurl": {
-					"value": "@dataset().baseurl",
+					"value": "@dataset().BASEURL",
 					"type": "Expression"
 				}
 			}
 		},
 		"parameters": {
-			"baseurl": {
+			"BASEURL": {
 				"type": "string"
 			},
-			"relativurl": {
+			"REALTIVEURL": {
 				"type": "string"
 			}
 		},
@@ -26,7 +26,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@dataset().relativurl",
+					"value": "@dataset().REALTIVEURL",
 					"type": "Expression"
 				}
 			},

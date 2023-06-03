@@ -1,0 +1,36 @@
+{
+	"name": "multiplefile_DS_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "multiplefiles.txt",
+				"container": "multiplefilecontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BASEURL",
+				"type": "String"
+			},
+			{
+				"name": "REALTIVEURL",
+				"type": "String"
+			},
+			{
+				"name": "FILENAME",
+				"type": "String"
+			}
+		]
+	}
+}
