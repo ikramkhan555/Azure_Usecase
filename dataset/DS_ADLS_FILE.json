@@ -1,0 +1,97 @@
+{
+	"name": "DS_ADLS_FILE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "csv",
+				"folderPath": "Covid19/vaccine_tracker",
+				"fileSystem": "realtimecontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "YearWeekISO",
+				"type": "String"
+			},
+			{
+				"name": "ReportingCountry",
+				"type": "String"
+			},
+			{
+				"name": "Denominator",
+				"type": "String"
+			},
+			{
+				"name": "NumberDosesReceived",
+				"type": "String"
+			},
+			{
+				"name": "NumberDosesExported",
+				"type": "String"
+			},
+			{
+				"name": "FirstDose",
+				"type": "String"
+			},
+			{
+				"name": "FirstDoseRefused",
+				"type": "String"
+			},
+			{
+				"name": "SecondDose",
+				"type": "String"
+			},
+			{
+				"name": "DoseAdditional1",
+				"type": "String"
+			},
+			{
+				"name": "DoseAdditional2",
+				"type": "String"
+			},
+			{
+				"name": "DoseAdditional3",
+				"type": "String"
+			},
+			{
+				"name": "DoseAdditional4",
+				"type": "String"
+			},
+			{
+				"name": "DoseAdditional5",
+				"type": "String"
+			},
+			{
+				"name": "UnknownDose",
+				"type": "String"
+			},
+			{
+				"name": "Region",
+				"type": "String"
+			},
+			{
+				"name": "TargetGroup",
+				"type": "String"
+			},
+			{
+				"name": "Vaccine",
+				"type": "String"
+			},
+			{
+				"name": "Population",
+				"type": "String"
+			}
+		]
+	}
+}
