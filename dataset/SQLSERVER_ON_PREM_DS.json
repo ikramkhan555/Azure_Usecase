@@ -1,0 +1,30 @@
+{
+	"name": "SQLSERVER_ON_PREM_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer_LS_ON_PREM",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "loc",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "my_tab"
+		}
+	}
+}
