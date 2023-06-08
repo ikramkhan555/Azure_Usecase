@@ -1,0 +1,9 @@
+{
+	"name": "easyDF",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f3176faf-e15b-41c3-9ddc-d8a040fb2bb2",
+		"tenantId": "37643b16-1e53-484f-a6e4-6fa8c4808d87"
+	}
+}
