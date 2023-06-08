@@ -1,0 +1,26 @@
+{
+	"name": "RestResource1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestAPI_GEN_LS",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"baseurl": "https://restcountries.com/v3.1/name"
+			}
+		},
+		"parameters": {
+			"countryname": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().countryname",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
