@@ -1,0 +1,17 @@
+{
+	"name": "RestAPI_GEN_LS",
+	"properties": {
+		"parameters": {
+			"baseurl": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "@{linkedService().baseurl}",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
