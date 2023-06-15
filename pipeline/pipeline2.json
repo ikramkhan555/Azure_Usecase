@@ -4,7 +4,7 @@
 		"description": "copy multiple files from blob to adls",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy data from blob to adls with multiple files",
 				"description": "copy multiple files from source to sink",
 				"type": "Copy",
 				"dependsOn": [],
